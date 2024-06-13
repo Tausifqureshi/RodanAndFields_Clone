@@ -82,7 +82,6 @@ function validateEmail() {
 function validatePassword() {
   const password = userPassword.value.trim();
   const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
-
   if (password === "") {
     setErrorMsg(userPassword, "This field is required");
     return false;

@@ -9,6 +9,33 @@
 // console.log(fullName)
 // })
 
+// let loginUser;
+
+// window.addEventListener('load', () => {
+//   // Retrieve the logged-in user's data from localStorage
+//   let getUser = JSON.parse(localStorage.getItem("loginuser"));
+
+//   // Log the retrieved user data for debugging purposes
+//   console.log(getUser);
+
+//   // Assign the retrieved user data to the global loginUser variable
+//   loginUser = getUser;
+
+//   // Find the HTML element to display the user's name
+//   let fullName = document.getElementById("storge");
+
+//   // If the element and the user data exist, display the user's name
+//   if (fullName && loginUser) {
+//     fullName.innerHTML = loginUser.name;
+//   } else {
+//     console.error("Either the user data or the element is missing.");
+//   }
+
+//   // Log the element for debugging purposes
+//   console.log(fullName);
+// });
+
+
 //===================================Data-fetch Api=====================================//
 // async function real (){
 //  const ret = await fetch ("data.json");
