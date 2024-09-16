@@ -10,7 +10,6 @@
 // })
 
 // let loginUser;
-
 // window.addEventListener('load', () => {
 //   // Retrieve the logged-in user's data from localStorage
 //   let getUser = JSON.parse(localStorage.getItem("loginuser"));
@@ -36,15 +35,20 @@
 // });
 
 
-//===================================Data-fetch Api=====================================//
-// async function real (){
-//  const ret = await fetch ("data.json");
-// //  console.log(ret)
-// const data = await ret.json();
-// console.log(data)
-// }
+// Home page check
+document.addEventListener("DOMContentLoaded", () => {
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
 
-// real()
+  if (!isLoggedIn) {
+    window.location.href = 'siginUp.html'; // Redirect to login page
+  }
+});
+
+function logout() {
+  localStorage.removeItem("isLoggedIn");
+  // Optionally redirect to login page
+  window.location.href = 'siginUp.html';
+}
 
 async function getData() {
   try {
@@ -190,7 +194,7 @@ var swiper = new Swiper(".mySwiper3", {
 
 
 
-
+   
 // Scroll Bar
 let header = document.querySelector("#section-hero");
 let footerElemnt = document.querySelector("#footer-top");
