@@ -67,7 +67,7 @@ async function getData() {
 // let cart = [];
 //==========================Render-Products==============================================//
 function displayData(allProduct) {
-  // console.log(allProduct)
+  console.log(allProduct)
   //  container.innerHTML = "";
   allProduct.map(function (ele) {
     let productsDiv = document.createElement("div");

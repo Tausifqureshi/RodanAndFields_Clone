@@ -4,8 +4,8 @@ console.log(items);
 // let static =  document.querySelector(".static");
 
 // Function to handle click event
-function clickFn() {
-  event.preventDefault(); // Prevent default behavior
+function clickFn(event) {
+  // event.preventDefault(); // Prevent default behavior
   localStorage.setItem("CartData", JSON.stringify(items)); // Use 'allProduct' instead of undefined 'product'
   alert("Product Added");
   window.location.href = 'cart.html';
