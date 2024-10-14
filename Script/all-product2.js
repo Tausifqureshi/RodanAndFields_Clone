@@ -7,7 +7,7 @@
 // Check if the "Data" key exists in localStorage
  
 // ==================================================//
-
+   
 var products = localStorage.getItem("Data")
 // console.log(products)
   ? JSON.parse(localStorage.getItem("Data"))  
