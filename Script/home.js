@@ -36,13 +36,13 @@
 
 
 // Home page check
-document.addEventListener("DOMContentLoaded", () => {
-  const isLoggedIn = localStorage.getItem("isLoggedIn");
+// document.addEventListener("DOMContentLoaded", () => {
+//   const isLoggedIn = localStorage.getItem("isLoggedIn");
 
-  if (!isLoggedIn) {
-    window.location.href = 'siginUp.html'; // Redirect to login page
-  }
-});
+//   if (!isLoggedIn) {
+//     window.location.href = 'siginUp.html'; // Redirect to login page
+//   }
+// });
 
 function logout() {
   localStorage.removeItem("isLoggedIn");
