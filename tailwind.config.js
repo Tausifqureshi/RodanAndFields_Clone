@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // content: [],
-  // content: ["*"],
   content: ["./**/*.html"], // ✅ all HTML files in any folder
-  // content: ["./*.html"], // ✅ all root-level HTML files
-
   theme: {
     extend: {},
   },
   plugins: [],
 };
+
+
+// jab bhi live server run kar ke project open kar re ge tab yaha command run karna padega.
+// npx tailwindcss -i ./input.css -o ./dist/output.css --watch
