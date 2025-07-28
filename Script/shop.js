@@ -27,7 +27,6 @@ document.querySelector("#price").textContent = `$${items.price}`;
 function togglePopup() {
   document.getElementById("popup-1").classList.toggle("active");
 }
-
 // modal id+2
 function togglePopup1() {
   document.getElementById("popup-2").classList.toggle("active1");
@@ -54,8 +53,6 @@ accordians.forEach((accordian) => {
   });
 });
 
-// const storedData = JSON.parse(localStorage.getItem("Data")) || {};
-// console.log(storedData)
 
 function renderProducts(products) {
   // const storedData = JSON.parse(localStorage.getItem("Data","id=1")) || {};
@@ -125,28 +122,6 @@ var swiper = new Swiper(".swiper", {
 
 
 
-// dropdown
-//========================================//
-//start
-// let optionMenu = document.querySelector(".select-menu"),
-//   selectBtn = document.querySelector(".select-btn"),
-//   options = document.querySelectorAll(".option");
-//   sBtnText = document.querySelector(".sbtn-text");
-
-// selectBtn.addEventListener("click", () =>
-// optionMenu.classList.toggle("active")
-// );
-
-// //select function means jo bhi slect o your select me jayge ga;
-// options.forEach((option) => {
-//   // console.log(option)
-//   option.addEventListener("click", () => {
-//     let selectOption = option.querySelector(".option-text").innerHTML;
-//     // console.log(selectOption)
-//     sBtnText.innerHTML= selectOption;
-//     console.log(selectOption);
-//   });
-// });
 
 function setupSelectMenu(selectMenu, selectBtn, options, sBtnText, optionTextClass) {
   selectBtn.addEventListener("click", () => selectMenu.classList.toggle("active"));
@@ -289,19 +264,19 @@ var swiper = new Swiper(".mySwiper2", {
 
 
 
-// Scroll Bar
-let header = document.querySelector("#section-hero");
-let footerElemnt = document.querySelector("#footer-top");
-let scrollElemnt = document.createElement("div");
-scrollElemnt.classList.add("back-to-top");
-scrollElemnt.innerText = "UP";
-footerElemnt.after(scrollElemnt);
+// // Scroll Bar
+// let header = document.querySelector("#section-hero");
+// let footerElemnt = document.querySelector("#footer-top");
+// let scrollElemnt = document.createElement("div");
+// scrollElemnt.classList.add("back-to-top");
+// scrollElemnt.innerText = "UP";
+// footerElemnt.after(scrollElemnt);
 
-function scrollTop() {
-  header.scrollIntoView({ behavior: "smooth" });
-}
+// function scrollTop() {
+//   header.scrollIntoView({ behavior: "smooth" });
+// }
 
-scrollElemnt.addEventListener("click", scrollTop);
+// scrollElemnt.addEventListener("click", scrollTop);
 
 
 

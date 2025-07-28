@@ -17,8 +17,11 @@ function handleChange() {
     h1.textContent = "Tausif";
   } else {
     h1.textContent = " Welcome to the Text Page";   
+
   }              
 }           
+
+
 
    
 

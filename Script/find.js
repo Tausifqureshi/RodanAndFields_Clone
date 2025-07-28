@@ -142,18 +142,18 @@ function setSuccess(el) {
 //   }
 
 
-// Scroll Bar
-let header = document.querySelector("#section-hero");
-let footerElemnt = document.querySelector("#footer-top");
-let scrollElemnt = document.createElement("div");
-scrollElemnt.classList.add("back-to-top");
-scrollElemnt.innerText = "UP";
-footerElemnt.after(scrollElemnt);
+// // Scroll Bar
+// let header = document.querySelector("#section-hero");
+// let footerElemnt = document.querySelector("#footer-top");
+// let scrollElemnt = document.createElement("div");
+// scrollElemnt.classList.add("back-to-top");
+// scrollElemnt.innerText = "UP";
+// footerElemnt.after(scrollElemnt);
 
-function scrollTop() {
-  header.scrollIntoView({ behavior: "smooth" });
-}
+// function scrollTop() {
+//   header.scrollIntoView({ behavior: "smooth" });
+// }
 
-scrollElemnt.addEventListener("click", scrollTop);
+// scrollElemnt.addEventListener("click", scrollTop);
 
 
