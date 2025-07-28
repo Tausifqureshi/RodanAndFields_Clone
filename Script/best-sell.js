@@ -7,8 +7,6 @@ function renderItems(productsItems){
       let productsDiv = document.createElement("div");
       productsDiv.classList.add("box");
       
-    //   let imgDiv = document.createElement('div')
-    //   imgDiv.classList.add("image")
       // Create Image
       let img = document.createElement("img");
       img.src = ele.image_url;

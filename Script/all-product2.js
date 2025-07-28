@@ -1,11 +1,3 @@
-// var product;
-// if (localStorage.getItem("Data") == null) {
-//   product = [];
-// } else {
-//   var products = JSON.parse(localStorage.getItem("Data"));
-// }
-// Check if the "Data" key exists in localStorage
- 
 // ==================================================//
    
 var products = localStorage.getItem("Data")
@@ -121,44 +113,25 @@ document.querySelector("#sort").addEventListener("change", function () {
 });
 
 // Search Filter Start==================================//
-function filterTable() {
-  const inputValue = document.getElementById("search").value.toLowerCase();
-  const productBoxes = document.querySelectorAll(".box");
+function searchItems() {
+  const input = document.getElementById("search").value.toLowerCase();
+  const boxes = document.querySelectorAll(".box");
+  let found = false;
 
-  productBoxes.forEach((box) => {
-    const productName = box.querySelector("h4.text").innerText.toLowerCase();
-    const displayStyle = productName.includes(inputValue) ? "" : "none";
-    box.style.display = displayStyle;
+  boxes.forEach((box) => {
+    const name = box.querySelector(".text").innerText.toLowerCase();
+    const match = name.includes(input);
+    box.style.display = match ? "" : "none";
+    if (match) found = true;
   });
 
-  updateResultMessage(productBoxes.length > 0);
+  document.getElementById("results").innerText = found ? "" : "No matches found";
 }
-function updateResultMessage(hasMatches) {
-  const result = document.getElementById("results");
-  result.innerHTML = hasMatches ? "" : "No matches found";
-}
-const inputTag = document.getElementById("search");
-inputTag.addEventListener("input", filterTable);
-document.getElementById("btn").addEventListener('click', searchAndHide);
 
-function searchAndHide() {
-  const searchInput = document.getElementById("search").value.toUpperCase();
-  const elements = document.querySelectorAll(".text");
-  const cards = document.querySelectorAll(".box");
-  let foundMatch = false;
+// ✅ Only one function used below:
+document.getElementById("search").addEventListener("input", searchItems);
+document.getElementById("btn").addEventListener("click", searchItems);
 
-  elements.forEach((element, index) => {
-    const textContent = element.innerText.toUpperCase();
-    if (textContent.includes(searchInput)) {
-      cards[index].classList.remove("hide");
-      foundMatch = true;
-    } else {
-      cards[index].classList.add("hide");
-    }
-  });
-
-  updateResultMessage(foundMatch);
-}
 // Search Filter End==================================//
 
 
