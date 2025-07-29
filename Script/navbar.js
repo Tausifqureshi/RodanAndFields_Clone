@@ -1,5 +1,4 @@
 // js/navbar.js
-
 export function getNavbar() {
   return `
   <header>
@@ -119,3 +118,4 @@ export function getNavbar() {
   </header>
   `;
 }
+  

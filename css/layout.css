@@ -52,17 +52,18 @@ header {
   z-index: 9999;
   position: -webkit-sticky;
 }
+
 .container {
-  /* box-sizing: border-box; */
   box-shadow: 0 2px 4px 0 rgba(219, 219, 219, 0.5);
   background-color: #ffffff;
   transition: all 1.4s;
 }
+
 .right {
   width: 100%;
   border-bottom: 2px solid black;
   box-shadow: 0 2px 4px 0 rgba(219, 219, 219, 0.5);
-}
+} 
 
 .right .navbar {
   display: flex;
@@ -99,8 +100,8 @@ header {
   justify-content: center;
   align-items: center;
   z-index: 999;
-  /* font-weight: 800; */
 }
+
 .wrapper .items {
   display: flex;
   justify-content: center;
@@ -126,6 +127,7 @@ ul.items .hover-bottom::after {
   opacity: 1;
   z-index: 199;
 }
+
 ul.items .hover-bottom:hover::after {
   display: block;
   width: 100%;
@@ -137,22 +139,17 @@ nav .show-contaent {
   top: 5.4rem;
   left: 0;
   right: 0;
-  /* display: none; */
   opacity: 0;
   overflow: hidden;
   visibility: hidden;
   z-index: 999;
   cursor: pointer;
-  /* transition: all 0.4s; */
-  /* transition-delay: 1s; */
 }
 
 nav li.has-child:hover .show-contaent {
   opacity: 1;
   visibility: visible;
   transition: all 0.4s;
-  /* display: block; */
-  /* transition: all 1.6s ease-in; */
 }
 
 .wrapping {
@@ -165,6 +162,7 @@ nav li.has-child:hover .show-contaent {
   overflow-x: hidden;
   border-bottom: 1px solid #d9d9d9;
 }
+
 .wrapping .flexcol h4 {
   margin-top: 2em;
   margin-bottom: 1rem;
@@ -190,7 +188,6 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   margin-top: 2em;
   border-bottom: 1px solid #dfdfdf;
 }
@@ -221,8 +218,8 @@ footer {
   padding: 5px 0;
   margin-top: 0.5em;
 }
+
 .About_and_help_p a {
-  /* font-size: 1.4rem; */
   font-family: Arial, Sans-Serif;
   color: #222;
   letter-spacing: 0.05rem;
@@ -246,8 +243,8 @@ footer {
 .socials .madia_icons {
   display: flex;
   gap: 4rem;
-  /* margin-top: 2em; */
 }
+
 .madia_icons a {
   font-size: 1.4em;
   line-height: 5;
@@ -270,7 +267,6 @@ footer {
   letter-spacing: 0.05rem;
   font-weight: 500;
   color: #222;
-  /* text-transform: capitalize; */
 }
 
 
