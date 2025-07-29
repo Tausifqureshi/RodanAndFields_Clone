@@ -1,40 +1,3 @@
-//name show userlogin logic?
-// let loginUser;
-// window.addEventListener('load',()=>{
-// let getUser =JSON.parse(localStorage.getItem("loginuser"))
-// console.log(getUser)
-// loginUser = getUser;
-// let fullName =document.getElementById("storge");
-// fullName.innerHTML= loginUser.name;
-// console.log(fullName)
-// })
-
-// let loginUser;
-// window.addEventListener('load', () => {
-//   // Retrieve the logged-in user's data from localStorage
-//   let getUser = JSON.parse(localStorage.getItem("loginuser"));
-
-//   // Log the retrieved user data for debugging purposes
-//   console.log(getUser);
-
-//   // Assign the retrieved user data to the global loginUser variable
-//   loginUser = getUser;
-
-//   // Find the HTML element to display the user's name
-//   let fullName = document.getElementById("storge");
-
-//   // If the element and the user data exist, display the user's name
-//   if (fullName && loginUser) {
-//     fullName.innerHTML = loginUser.name;
-//   } else {
-//     console.error("Either the user data or the element is missing.");
-//   }
-
-//   // Log the element for debugging purposes
-//   console.log(fullName);
-// });
-
-
 // Home page check
 // document.addEventListener("DOMContentLoaded", () => {
 //   const isLoggedIn = localStorage.getItem("isLoggedIn");
@@ -47,7 +10,7 @@
 function logout() {
   localStorage.removeItem("isLoggedIn");
   // Optionally redirect to login page
-  window.location.href = 'siginUp.html';
+  window.location.href = "siginUp.html";
 }
 
 async function getData() {
@@ -60,14 +23,14 @@ async function getData() {
   } catch (error) {
     console.error("Error fetching data: ", error);
   }
-} 
-  
+}
+
 // let arr =  localStorage.getItem("cartData") ? JSON.parse(localStorage.getItem("cartData")) :[];
 
 // let cart = [];
 //==========================Render-Products==============================================//
 function displayData(allProduct) {
-  console.log(allProduct)
+  console.log(allProduct);
   //  container.innerHTML = "";
   allProduct.map(function (ele) {
     let productsDiv = document.createElement("div");
@@ -125,22 +88,22 @@ function displayData(allProduct) {
   localStorage.setItem("Data", JSON.stringify(allProduct));
   // console.log(allProduct);
   //========================================================================//
-} 
+}
 
 function addToCart(product) {
-  let cart = JSON.parse(localStorage.getItem('CartData')) || [];
-  console.log(cart)
-  const isItemExist = cart.find(item => item.name === product.name);
-  
+  let cart = JSON.parse(localStorage.getItem("CartData")) || [];
+  console.log(cart);
+  const isItemExist = cart.find((item) => item.name === product.name);
+
   if (isItemExist) {
-    alert('Product Already Added');
-    window.location.href = 'cart.html';
+    alert("Product Already Added");
+    window.location.href = "cart.html";
     return;
   }
-  
+
   cart.push(product);
-  localStorage.setItem('CartData', JSON.stringify(cart));
-  alert('Product Added');
+  localStorage.setItem("CartData", JSON.stringify(cart));
+  alert("Product Added");
 }
 
 //========================================================================//
@@ -172,7 +135,7 @@ var swiper = new Swiper(".mySwiper2", {
     el: ".swiper-scrollbar",
   },
 });
-  
+
 //Bottom Image Swiper
 var swiper = new Swiper(".mySwiper3", {
   loop: true,
@@ -192,9 +155,6 @@ var swiper = new Swiper(".mySwiper3", {
   },
 });
 
-
-
-   
 // Scroll Bar
 // let header = document.querySelector("#section-hero");
 // let footerElemnt = document.querySelector("#footer-top");
@@ -209,4 +169,4 @@ var swiper = new Swiper(".mySwiper3", {
 
 // scrollElemnt.addEventListener("click", scrollTop);
 
-getData()
+getData();

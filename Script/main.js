@@ -42,3 +42,4 @@ document.addEventListener("DOMContentLoaded", () => {
 // <div id="navbar"></div>
 //  <div id="footer"></div>
 //<script type="module" src="./Script/main.js"></script>
+// <link rel="stylesheet" href="/css/layout.css"></link>
