@@ -166,6 +166,7 @@ nav li.has-child:hover .show-contaent {
   font-weight: 400;
 }
 
+/* Bade devices pe show nhi hoga */
 #mobail {
   display: none;
   align-items: center;
