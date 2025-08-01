@@ -1,3 +1,16 @@
+// Only Navbwr ke liye sue yaha i
+// import { getNavbar } from "./navbar.js";
+// document.addEventListener("DOMContentLoaded", () => {
+//   const navbarContainer = document.getElementById("navbar");
+
+//   if (navbarContainer) {
+//     navbarContainer.innerHTML = getNavbar();
+//   }
+// });
+
+
+
+
 import { getNavbar } from "./navbar.js";
 import { getFooter } from "./footer.js";
 
@@ -38,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 100); // 100ms ka delay — safe margin
   }
 });
+
 
 // <div id="navbar"></div>
 //  <div id="footer"></div>

@@ -118,3 +118,290 @@ export function getNavbar() {
   </header>
   `;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+// body {
+//   font-family: "Poppins", sans-serif;
+//   background: #fff;
+//   color: #222;
+// }
+
+// ul {
+//   list-style: none;
+// }
+// a {
+//   text-decoration: none;
+//   color: inherit;
+// }
+// img {
+//   max-width: 100%;
+//   display: block;
+// }
+
+// .header {
+//   position: sticky;
+//   top: 0;
+//   background: #fff;
+//   z-index: 999;
+//   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+// }
+
+// .top-bar {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 1rem 1.5rem;
+//   border-bottom: 1px solid #eee;
+// }
+
+// .logo img {
+//   max-height: 40px;
+// }
+
+// .nav-icons {
+//   display: flex;
+//   gap: 1rem;
+//   align-items: center;
+// }
+
+// .nav-link {
+//   font-size: 16px;
+//   display: flex;
+//   align-items: center;
+// }
+
+// .consultant-link {
+//   font-weight: 600;
+//   font-size: 14px;
+//   color: #2a2a2a;
+// }
+
+// .main-nav {
+//   background: #fff;
+// }
+
+// .nav-items {
+//   display: flex;
+//   justify-content: center;
+//   gap: 2rem;
+//   padding: 1.2rem 0;
+// }
+
+// .nav-item a {
+//   font-weight: 500;
+//   position: relative;
+// }
+
+// .nav-item a::after {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   bottom: -5px;
+//   height: 2px;
+//   width: 0;
+//   background: #3498db;
+//   transition: width 0.3s ease;
+// }
+
+// .nav-item a:hover::after {
+//   width: 100%;
+// }
+
+// .dropdown {
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   background: #fff;
+//   width: 100vw;
+//   padding: 2rem;
+//   display: none;
+//   justify-content: space-around;
+//   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+// }
+
+// .has-dropdown:hover .dropdown {
+//   display: flex;
+// }
+
+// .dropdown-column h4 {
+//   font-size: 14px;
+//   margin-bottom: 0.5rem;
+// }
+
+// .dropdown-column ul li {
+//   font-size: 14px;
+//   margin-bottom: 0.4rem;
+// }
+
+// .mobile-toggle,
+// .mobile-close {
+//   display: none;
+//   font-size: 24px;
+//   cursor: pointer;
+// }
+
+// /* Responsive Design */
+// @media (max-width: 991px) {
+//   .nav-items {
+//     flex-direction: column;
+//     align-items: flex-start;
+//     gap: 1rem;
+//     padding: 3rem 2rem;
+//   }
+
+//   .main-nav {
+//     position: fixed;
+//     top: 0;
+//     right: -100%;
+//     width: 300px;
+//     height: 100%;
+//     background: #fff;
+//     transition: right 0.3s ease;
+//     box-shadow: -2px 0 5px rgba(0,0,0,0.05);
+//     z-index: 9999;
+//   }
+
+//   .main-nav.open {
+//     right: 0;
+//   }
+
+//   .dropdown {
+//     display: none !important;
+//   }
+
+//   .nav-icons,
+//   .consultant-link {
+//     display: none;
+//   }
+
+//   .mobile-toggle {
+//     display: block;
+//   }
+
+//   .mobile-close {
+//     display: block;
+//     padding: 1rem;
+//   }
+// }
+
+
+
+// <!-- 
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//   <meta charset="UTF-8" />
+//   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+//   <title>Modern Responsive Navbar</title>
+//   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+//   <link rel="stylesheet" href="text.css" />
+// </head>
+// <body>
+
+//   <header class="header">
+   
+//     <div class="top-bar">
+//       <a href="#" class="consultant-link">FIND A CONSULTANT</a>
+      
+     
+//       <a href="#" class="logo">
+//         <img src="https://www.rodanandfields.com/en-us/medias/rf-logo.svg?context=bWFzdGVyfGltYWdlc3w3MzczfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2g2MC9oYWIvODgyMjE0NzE4NjcxOC5zdmd8YjNmMmU2YTg5MTM0NTMzM2Y2ODg2ZmRkZTJhNmY2OWZhYmYyYjk5NWQxODkxODFiYjVkY2MxY2NjOWRlMzA5OA" alt="Logo" />
+//       </a>
+
+
+//       <div class="nav-icons">
+//         <a href="#" class="nav-link"><i class="fa fa-search"></i></a>
+//         <a href="#" class="nav-link"><i class="fa-regular fa-user"></i></a>
+//         <a href="#" class="nav-link"><i class="fa fa-bag-shopping"></i></a>
+//         <a href="#" class="nav-link lang">EN</a>
+//       </div>
+
+
+//       <div class="mobile-toggle" id="menu-btn">
+//         <i class="fa fa-bars"></i>
+//       </div>
+//     </div>
+
+
+//     <nav class="main-nav" id="nav">
+
+//       <div class="mobile-close" id="close-btn">
+//         <i class="fa fa-times"></i>
+//       </div>
+
+//       <ul class="nav-items">
+//         <li class="nav-item has-dropdown">
+//           <a href="#">SKINCARE</a>
+//           <div class="dropdown">
+//             <div class="dropdown-column">
+//               <h4>SHOP BY CATEGORY</h4>
+//               <ul>
+//                 <li><a href="#">Regimens</a></li>
+//                 <li><a href="#">Serums</a></li>
+//                 <li><a href="#">Masks</a></li>
+//               </ul>
+//             </div>
+//             <div class="dropdown-column">
+//               <h4>SKIN CONCERNS</h4>
+//               <ul>
+//                 <li><a href="#">Acne</a></li>
+//                 <li><a href="#">Aging</a></li>
+//                 <li><a href="#">Dryness</a></li>
+//               </ul>
+//             </div>
+//           </div>
+//         </li>
+//         <li class="nav-item"><a href="#">HAIRCARE</a></li>
+//         <li class="nav-item"><a href="#">BEST SELLERS</a></li>
+//         <li class="nav-item"><a href="#">SPECIAL OFFERS</a></li>
+//         <li class="nav-item"><a href="#">ABOUT</a></li>
+//         <li class="nav-item"><a href="#">PERKS</a></li>
+//         <li class="nav-item"><a href="#">CONSULTANT</a></li>
+//       </ul>
+//     </nav>
+//   </header>
+
+//   <script>
+//     const menuBtn = document.getElementById("menu-btn");
+//     const closeBtn = document.getElementById("close-btn");
+//     const nav = document.getElementById("nav");
+
+//     menuBtn.addEventListener("click", () => {
+//       nav.classList.add("open");
+//     });
+
+//     closeBtn.addEventListener("click", () => {
+//       nav.classList.remove("open");
+//     });
+//   </script>
+  
+// </body>
+// </html> 
