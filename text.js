@@ -16,5 +16,6 @@ document.querySelectorAll(".items li a").forEach((link) => {
   link.addEventListener("click", () => {
     nav.classList.remove("active");
     // document.body.style.overflow = "auto"; // optional scroll unlock
+    
   });
 });
