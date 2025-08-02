@@ -242,12 +242,9 @@ nav li.has-child:hover .show-contaent {
   }
 }
 
+
 @media (max-width: 600px) {
-  .navbar {
-    background: scroll;
-    position: fixed;
-    top: 0;
-    
-  }
-  
+     
+
+   
 }
