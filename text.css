@@ -171,7 +171,7 @@ nav li.has-child:hover .show-contaent {
   display: none;
   align-items: center;
 }
-
+ 
 #close {
   display: none;
 }
@@ -243,3 +243,7 @@ nav li.has-child:hover .show-contaent {
 
 }
 
+@media(max-width: 600px){  
+  
+
+}          
