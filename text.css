@@ -166,12 +166,12 @@ nav li.has-child:hover .show-contaent {
   font-weight: 400;
 }
 
-/* Bade devices pe show nhi hoga */
+/* Bade devices pe show nhi hoga yaha dono icon*/
 #mobail {
   display: none;
   align-items: center;
 }
- 
+
 #close {
   display: none;
 }
@@ -240,10 +240,14 @@ nav li.has-child:hover .show-contaent {
     color: #041e42;
     font-size: 25px;
   }
-
 }
 
-@media(max-width: 600px){  
+@media (max-width: 600px) {
+  .navbar {
+    background: scroll;
+    position: fixed;
+    top: 0;
+    
+  }
   
-
-}          
+}
