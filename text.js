@@ -1,6 +1,6 @@
 const bar = document.getElementById("bar");
 const close = document.getElementById("close");
-const nav = document.querySelector(".items");
+const nav = document.querySelector(".icon");
 
 bar.addEventListener("click", () => {
   nav.classList.add("active");
