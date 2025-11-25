@@ -128,7 +128,7 @@ function storeData() {
   };
   let users = JSON.parse(localStorage.getItem("userData")) || [];
   const findUser = users.find((value) => value.email === userData.email);
-  
+   
   if (!findUser) { 
     users.push(userData);
     localStorage.setItem("userData", JSON.stringify(users));
